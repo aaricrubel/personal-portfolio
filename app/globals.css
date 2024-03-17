@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.block-separator {
+  border-color: currentColor;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  color: #000;
+}

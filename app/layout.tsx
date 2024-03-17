@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Asul } from "next/font/google";
 import "./globals.css";
+import SideNav from "./ui/sidenav";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const asul = Asul({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,11 +21,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-          <div className="w-full flex-none md:w-64">Side Nav</div>
-          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
-            {children}
+      <body className={`${asul.className} antialiased`}>
+        <div className="bg-background">
+          <div className="py-7">
+            <div className="px-1.5">
+              <div className="max-w-5xl flex flex-col mx-auto">
+                <div className="text-[32px]">
+                  <Link href="/">Abhinav Mukherjee</Link>
+                </div>
+                <div className="flex md:flex-row mt-6 gap-20">
+                  <SideNav />
+                  <div>{children}</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </body>
