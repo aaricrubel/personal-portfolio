@@ -27,7 +27,9 @@ export default function RootLayout({
             <div className="px-1.5">
               <div className="max-w-5xl flex flex-col mx-auto">
                 <div className="text-[32px]">
-                  <Link href="/">Abhinav Mukherjee</Link>
+                  <Link href="/" className="hover:underline underline-offset-2">
+                    Abhinav Mukherjee
+                  </Link>
                 </div>
                 <div className="flex md:flex-row mt-6 gap-20">
                   <SideNav />
