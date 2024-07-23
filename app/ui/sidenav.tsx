@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideNav() {
 	return (
-		<div>
+		<div className="order-last md:order-first">
 			<div className="text-[28px] mt-[27px] mb-[10px]">Overview</div>
 			<hr className="block-separator" />
 			<ul className="list-disc my-[17px] pl-[38px] text-links">

@@ -29,12 +29,12 @@ export default function RootLayout({
 								<div className="text-[32px]">
 									<Link
 										href="/"
-										className="hover:underline underline-offset-2"
+										className="hover:underline underline-offset-2 text-links"
 									>
 										Abhinav Mukherjee
 									</Link>
 								</div>
-								<div className="flex flex-row mt-6 gap-20">
+								<div className="flex flex-col md:flex-row mt-6 gap-20">
 									<SideNav />
 									<div>{children}</div>
 								</div>
