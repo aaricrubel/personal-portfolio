@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SideNav() {
 	return (
 		<div className="order-last md:order-first">
-			<div className="text-[28px] mt-[27px] mb-[10px]">Overview</div>
+			<div className="text-3xl mt-[27px] mb-[10px]">Overview</div>
 			<hr className="block-separator" />
 			<ul className="list-disc my-[17px] pl-[38px] text-links">
 				<li>
@@ -56,7 +56,7 @@ export default function SideNav() {
 					</Link>
 				</li>
 			</ul>
-			<div className="text-[28px] mt-[27px] mb-[10px]">
+			<div className="text-3xl mt-[27px] mb-[10px]">
 				My Favorite Posts
 			</div>
 			<hr className="block-separator" />
@@ -86,7 +86,7 @@ export default function SideNav() {
 					</Link>
 				</li>
 			</ul>
-			<div className="text-[28px] mt-[27px] mb-[10px]">Curation</div>
+			<div className="text-3xl mt-[27px] mb-[10px]">Curation</div>
 			<hr className="block-separator" />
 			<ul className="list-disc my-[17px] pl-[38px] text-links">
 				<li>
